@@ -1,38 +1,186 @@
-### FoolThePrimeJester (FTPJ) - ShieldSSP’nin Geliştirme Aşamasındaki Yeni Nesil Sosyal Mühendislik Aracı
+# FoolThePrimeJester (FTPJ)
 
-ShieldSSP ekibi tarafından geliştirilmekte olan **FoolThePrimeJester** (kısaca FTPJ), sosyal mühendislik odaklı bilgi toplama araçları arasında devrim yaratmaya hazırlanıyor. Şu anda geliştirme aşamasında olan bu araç, ShieldSSP’nin üst yetkili bireyleri tarafından kullanılan **ClayFool** adlı sistemin çok daha ileri bir versiyonu olarak tasarlanıyor. Diğer adıyla **ClayFoolv2** olarak da anılacak olan FTPJ, henüz yayınlanmamış olsa da şimdiden büyük bir beklenti yaratmış durumda. İsminin anlamı, “FoolThePrimeJester” yani “Baş Soytarıyı Kandır” ya da “Baş Soytarıyı Düşür”, aracın hedef kitlesini açıkça ortaya koyuyor: Baş Soytarı, ShieldSSP’nin mücadele ettiği “Toxic” kitlenin en deneyimli ve manipülasyona dirençli bireylerini temsil ediyor. FTPJ, bu tür zorlu hedefleri alt etmek için geliştiriliyor; ancak kullanım amacı esnek ve çok yönlü bir yapıda olacak.
+**Advanced Social Engineering & Reconnaissance Framework**
 
-#### FTPJ’nin Planlanan Yapısı ve Erişim Modeli
-FoolThePrimeJester, geliştirme süreci tamamlandığında herkesin erişimine açık bir araç olarak sunulacak; ancak geniş çapta yayılmasını önlemek amacıyla bir **giriş anahtarı sistemi** ile korunacak. Bu sistem, aracın iki farklı erişim seviyesine sahip olmasını sağlayacak:
+---
 
-1. **Kısıtlı ve Limitli Versiyon**: Standart bir giriş anahtarıyla erişilebilecek bu sürüm, temel bilgi toplama özelliklerini içerecek. Fonksiyonellik açısından ShieldSSP’nin önceki aracı **AertLog**’a benzer bir deneyim sunması planlanıyor. Bu versiyon, genel kullanıcılar için yeterli bir başlangıç seviyesi sunarken, aracın tam potansiyelini açığa çıkarmayacak.
-   
-2. **Sınırsız ve Limitsiz Versiyon**: ShieldSSP’ye özel anahtarlarla erişilecek bu sürüm, FTPJ’nin gerçek gücünü ortaya koyacak. ClayFool’un yeteneklerini katbekat aşan bu versiyon, ileri düzey sosyal mühendislik operasyonları için optimize edilmiş bir sistem sunmayı hedefliyor. ShieldSSP ekibinin ihtiyaçlarına özel olarak tasarlanan bu mod, kapsamlı bilgi toplama ve analiz kapasitesiyle fark yaratacak.
+### ⚠️ Important Legal & Ethical Warning
 
-#### FTPJ’nin Geliştirilmekte Olan Özellikleri
-FTPJ, sosyal mühendislik alanında bilgi toplama süreçlerini yeniden tanımlayacak yenilikçi özelliklerle donatılmak üzere geliştiriliyor. İşte aracın planlanan en dikkat çekici yönleri:
+**FoolThePrimeJester** is a powerful social engineering and information gathering tool. It is intended **strictly for educational, security research, authorized penetration testing, and red teaming purposes**.
 
-1. **ShieldSSP’ye Özel Information Lookup Servisi**  
-   FTPJ’nin sınırsız versiyonunda yer alması planlanan bu servis, tek bir bilgiden yola çıkarak hedef hakkında inanılmaz derecede yoğun ve geniş bir veri havuzu oluşturmayı amaçlıyor. Örneğin, bir kullanıcı adı, e-posta adresi veya IP gibi küçük bir veri parçası, bu servis sayesinde hedefin kişisel bilgilerinden sosyal medya aktivitelerine, hatta fiziksel konumuna kadar pek çok detayı ortaya çıkarabilecek. Başlangıç sürümünde tek bir linkten elde edilen **5 KB veri**, Information Lookup servisi ile tarandığında **100 KB’lık devasa bir veri yığınına** dönüşebilecek. Ancak ShieldSSP’ye özel erişim yetkisinde, bu veri miktarı kullanıcı kamera cihazlarından fotoğraf çekme, mikrofondan ses kaydı yapma ve kullanıcı hesaplarını ele geçirme gibi ek özelliklerle **500 KB’ye kadar** çıkabilir. Information Lookup’un tam kapasitesiyle bu veri, **5 MB’a** kadar genişleyebilir. Bu, sosyal mühendislik operasyonlarında hedef analizi süreçlerini hızlandırarak benzersiz bir etkinlik sağlamayı hedefliyor.
+Any illegal use, unauthorized phishing, credential harvesting, or malicious activity is **strictly prohibited** and may result in legal consequences. 
 
-2. **Gelişmiş IPWhois ve GPS Doğruluğu**  
-   Standart IP lookup araçlarının ötesine geçmesi planlanan FTPJ, ek bir **IPWhois servisi** ile IP adreslerinden elde edilen bilgileri daha doğru ve kapsamlı bir şekilde sunacak. Bu servis, hedefin bulunduğu mahalleye kadar yaklaşık **%99,5 doğruluk** oranıyla konum tahmini yapabilme kapasitesine sahip olacak. IPWhois ile elde edilen veriler, GPS konumuyla eşleştirildiğinde, hedefin fiziksel lokasyonu neredeyse kusursuz bir şekilde belirlenebilecek. Bu, özellikle hassas operasyonlar için kritik bir avantaj sağlamayı amaçlıyor.
+Use this tool responsibly and ethically. The developers assume no liability for misuse.
 
-3. **Tek Linkle 5 KB Veri Toplama Kapasitesi ve Daha Fazlası**  
-   FTPJ, bir hedefin tek bir linke tıklamasından elde edilen verilerle rakiplerini geride bırakacak bir sistem geliştiriyor. Başlangıçta **5 KB veri** toplayabilmesi hedeflenen bu sistem, diğer popüler servisler (örneğin Grabify gibi IP logger araçları) ile karşılaştırıldığında **5 kat**, ClayFool ile karşılaştırıldığında ise **2 kat** daha fazla veri sunacak. ShieldSSP’ye özel erişimde ise kamera ve mikrofon verileriyle birlikte kullanıcı hesaplarının ele geçirilmesi sayesinde bu miktar **500 KB’ye** ulaşabilir. Information Lookup ile birleştiğinde ise **5 MB’a** kadar genişleyebilen bir bilgi hazinesi anlamına geliyor. Toplanan veriler, hedefin cihaz bilgilerinden tarayıcı geçmişine, çekilen fotoğraflara ve ses kayıtlarına kadar geniş bir yelpazeyi kapsayacak.
+---
 
-4. **VPN, Proxy ve Tor Engelleme Özelliği**  
-   FTPJ’nin geliştirme aşamasında üzerinde durulan bir diğer yenilik, hedeflerin gizliliğini koruma yöntemlerini aşma kabiliyeti. Araç, VPN, Proxy ve Tor gibi anonimleştirme teknolojilerini tespit edip engelleyebilecek özelliklerle donatılmaya çalışılıyor. Bu, hedeflerin gerçek kimliklerini ve konumlarını gizleme çabalarını etkisiz hale getirerek FTPJ’nin etkinliğini artırmayı hedefliyor.
+### What is FoolThePrimeJester?
 
-#### FTPJ’nin Planlanan Kullanım Amaçları ve Esnekliği
-FoolThePrimeJester, yalnızca Toxic kitlenin deneyimli bireylerini kandırmak için değil, aynı zamanda farklı senaryolarda kullanılmak üzere tasarlanıyor. Esnek yapısı sayesinde şu amaçlarla kullanılabilecek:
-- **Hedef Analizi**: Kişisel veya kurumsal hedefler hakkında detaylı bilgi toplama.
-- **Konum Tespiti**: Fiziksel lokasyon belirleme ve operasyonel planlama.
-- **Sistem Testleri**: Güvenlik açıklarını tespit etmek için simüle edilmiş sosyal mühendislik saldırıları.
-- **Veri Madenciliği**: Tek bir kaynaktan geniş çaplı veri çıkarımı.
+**FoolThePrimeJester** (FTPJ) is a Flask-based social engineering framework designed to create advanced logging links (IP loggers + phishing pages) and collect detailed information from targets through social engineering techniques.
 
-#### FTPJ’nin Geliştirme Süreci ve Geleceği
-ShieldSSP ekibi, FTPJ’yi sürekli geliştirme taahhüdünde bulunuyor. Şu anda geliştirme aşamasında olan araç, henüz yayınlanmamış olsa da ClayFool’un çok ötesinde bir kapasite sunmayı vaat ediyor. Özellikle VPN/Proxy/Tor engelleme ve kamera/mikrofon veri toplama gibi özelliklerin tam anlamıyla entegre edilmesiyle, FTPJ’nin sosyal mühendislik dünyasında rakipsiz bir konuma ulaşması bekleniyor. Geliştirme süreci tamamlandığında, aracın hem genel kullanıcılar hem de ShieldSSP ekibi için eşsiz bir deneyim sunacağı öngörülüyor.
+The name "FoolThePrimeJester" roughly translates to **"Fool the Prime Jester"** — implying the goal of bypassing even security-conscious, high-awareness individuals ("Prime Jesters").
 
-#### Sonuç
-FoolThePrimeJester, ShieldSSP’nin bilgi toplama ve sosyal mühendislik alanındaki uzmanlığını yansıtan bir başyapıt olma yolunda ilerliyor. “Baş Soytarıyı Kandır” mottosuyla geliştirilen bu araç, hem genel kullanıcılar için erişilebilir bir çözüm sunmayı hem de ShieldSSP’nin elit ekibi için sınırları zorlayan bir sistem vaat etmeyi amaçlıyor. Giriş anahtarı sistemiyle dengelenmiş erişim modeli, aracın gücünü kontrollü bir şekilde dağıtarak kötüye kullanım riskini en aza indirmeyi hedefliyor. Henüz yayınlanmamış olsa da FTPJ, sosyal mühendislik dünyasında yeni bir standart belirlemeye aday bir araç olarak büyük bir merak uyandırıyor. Geliştirme süreci tamamlandığında, özellikle 5 KB’lık veriden 5 MB’lık bilgi çıkarabilen Information Lookup gibi yeniliklerle bu alanda çığır açması bekleniyor.
+It is the successor/improved version of previous tools like **ClayFool**.
+
+---
+
+### Project Status
+
+- **Stage**: Early / Incomplete Development
+- Due to insufficient time, many planned premium features could not be fully implemented.
+- **PremiusTool** has been integrated as a separate reconnaissance module.
+- The project was initially planned as closed-source but was released as **open-source** for the community.
+
+**We apologize** for not meeting the high expectations initially set for the tool.
+
+---
+
+### Repository Files
+
+| File                        | Description |
+|----------------------------|-----------|
+| `FoolThePrimeJester.py`    | Main Flask server – handles logging, phishing pages, and admin functions |
+| `FoolThePrimeJester_Client.py` | Client tool for generating logger links and managing campaigns |
+| `PremiusTool.py`           | Advanced OSINT / Reconnaissance & Profiling utility |
+| `ssp_keys.txt`             | ShieldSSP premium keys (unlimited features) |
+| `starter_keys.txt`         | Limited free tier keys |
+
+---
+
+### FoolThePrimeJester – Main Features
+
+#### Core Logging Capabilities
+- Detailed IP logging + rich browser/device fingerprinting
+- Collection of User-Agent, screen resolution, language, timezone, referrer, etc.
+- VPN / Proxy / Tor / Datacenter / Hosting detection (keyword-based + IP reputation sources)
+
+#### Phishing Templates (High-Quality Fake Login Pages)
+- Google / Gmail
+- Facebook
+- Instagram
+- X (Twitter)
+- Netflix
+- PayPal
+- Steam
+- Microsoft / Office 365
+- MediaFire, MEGA, and others
+
+Most templates include:
+- Realistic design and styling
+- Email + Password capture (`type: "account"`)
+- Media processing in background (camera + microphone attempts)
+
+#### Media Grabbing (Camera & Microphone)
+- Attempts to request camera and microphone access using `getUserMedia()`
+- Tries multiple camera devices
+- Captures low-resolution photos (128x128) and short audio recordings
+- Sends data back to the server as base64
+
+> **Note**: Success rate is **low** on modern browsers (Chrome, Firefox, Edge) due to strict permission policies and HTTPS requirements.
+
+#### Other Features
+- Custom "Human Verification", "Loading...", and blank pages
+- Direct redirect option
+- Custom iframe page support
+- Simple admin interface (`adminput` links) to view collected logs
+- Two-tier key system: Starter (limited) vs SSP (premium/unlimited)
+
+---
+
+### PremiusTool – Advanced Reconnaissance Module
+
+**PremiusTool** is a powerful standalone OSINT and scanning utility included in the repository.
+
+#### Main Features of PremiusTool
+
+- **Deep Host/Domain Lookup**
+  - Multiple geolocation sources (ipapi.co, ipinfo.io, ip-api.com, ipwho.is, etc.)
+  - Reverse geocoding via Nominatim
+  - WHOIS information
+  - DNS record enumeration (A, AAAA, MX, NS, TXT, SOA, CNAME, etc.)
+
+- **Port Scanning**
+  - Full TCP port scanning (or range-based)
+  - Service usage descriptions for well-known ports
+
+- **Security & Threat Intelligence**
+  - VirusTotal IP address check
+  - SSL/TLS certificate extraction and analysis
+
+- **Web & HTTP Analysis**
+  - HTTP method scanning (GET, POST, PUT, OPTIONS, TRACE, etc.)
+  - Custom header spoofing (X-Forwarded-For, X-Real-IP, etc.)
+
+- **Additional Tools**
+  - DNSDumpster integration
+  - DuckDuckGo search integration
+  - Interactive CLI with `cmd` module
+
+#### PremiusTool CLI Features
+- `scan <target>` → Full reconnaissance on domain or IP
+- `search <query>` → DuckDuckGo search
+- Profile system (`create_profile`, `load_profile`, `set_profile`, `add_entity`, `expand_data`, `find_identity`)
+- Save all results as timestamped JSON files
+- Colored output with `colorama`
+
+---
+
+### Deployment Recommendation
+
+- **Server (`FoolThePrimeJester.py`)**: Best deployed on **PythonAnywhere** (free tier works for testing).
+- Local testing is also possible (`python FoolThePrimeJester.py`).
+
+---
+
+### Limitations (Honest Assessment)
+
+- Camera & microphone grabbing works inconsistently due to browser security.
+- VPN/Proxy detection is basic (keyword-based).
+- Information Lookup Service (planned advanced enrichment) was **not implemented**.
+- Database is simple JSON file (not production-grade).
+- Code quality and structure still need improvement.
+- PremiusTool is powerful but can be slow during full port scans.
+
+---
+
+### Ethical Use Guidelines
+
+You may use this tool for:
+- Personal learning and skill development
+- Authorized security assessments
+- Red team exercises (with permission)
+- Security awareness training
+
+You must **not** use it for:
+- Phishing unsuspecting individuals
+- Stealing credentials
+- Any form of cybercrime or harassment
+
+---
+
+### Future Roadmap
+
+- Stabilize core server and fix bugs
+- Implement Information Lookup Service (separate module)
+- Improve documentation and add Wiki
+- Better database backend (SQLite / PostgreSQL)
+- Enhanced client interface
+- Code refactoring and optimization
+
+---
+
+### License
+
+MIT License
+
+---
+
+### Final Note from the Developer
+
+> FoolThePrimeJester and PremiusTool are **learning instruments**, not weapons.  
+> Social engineering is an extremely powerful technique. With great power comes great responsibility.
+
+We will continue developing and improving the project when time permits. Contributions, suggestions, and constructive feedback are welcome.
+
+İstersen daha kısa bir versiyon, daha teknik bir versiyon veya belirli bir kısmı vurgulamamı söyle, hemen düzenleyeyim.
+```
