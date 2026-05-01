@@ -207,11 +207,18 @@ def get_methods(host):
 	return methods
 
 def get_dnsdumpster(host):
-	try:
-		res = DNSDumpsterAPI().search(host)
-		return res
-	except Exception as e:
-		return str(e)
+    try:
+        res = DNSDumpsterAPI().search(host)
+        try:
+            res["image_data"] = res["image_data"].decode()
+        except:
+            try:
+                res["image_data"] = str(res["image_data"])
+            except:
+                pass
+        return res
+    except Exception as e:
+        return str(e)
 
 def host_lookup(host):
 	global domain_ip
@@ -480,12 +487,15 @@ def display_results(data, verbose=False):
         print(f"\n{Fore.BLUE}[+] SSL Certificate{Style.RESET_ALL}")
         if isinstance(info['ssl_certificate'], dict):
             cert = info['ssl_certificate']
-            print(f"  Subject: {cert.get('subject', {}).get('CN', 'N/A')}")
-            print(f"  Issuer: {cert.get('issuer', {}).get('CN', 'N/A')}")
-            print(f"  Valid From: {cert.get('notBefore', 'N/A')}")
-            print(f"  Valid Until: {cert.get('notAfter', 'N/A')}")
+            try:
+                print(f"  Subject: {cert.get('subject', {}).get('CN', 'N/A')}")
+                print(f"  Issuer: {cert.get('issuer', {}).get('CN', 'N/A')}")
+                print(f"  Valid From: {cert.get('notBefore', 'N/A')}")
+                print(f"  Valid Until: {cert.get('notAfter', 'N/A')}")
+            except:
+                print(f"  Certificate Data (Raw): {cert}")
         else:
-            print(f"  {info['ssl_certificate']}")
+            print(f"  Certificate Data (Raw): {info["ssl_certificate"]}")
         
         if verbose:
             print(f"\n{Fore.BLUE}[+] HTTP Methods{Style.RESET_ALL}")
