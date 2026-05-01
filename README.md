@@ -28,6 +28,8 @@ It is the successor/improved version of previous tools like **ClayFool**.
 
 ### Project Status
 
+![image](images/image2.png)
+
 - **Stage**: Early / Incomplete Development
 - Due to insufficient time, many planned premium features could not be fully implemented.
 - **PremiusTool** has been integrated as a separate reconnaissance module.
@@ -51,10 +53,14 @@ It is the successor/improved version of previous tools like **ClayFool**.
 
 ### FoolThePrimeJester – Main Features
 
+![image](images/image3.png)
+
 #### Core Logging Capabilities
 - Detailed IP logging + rich browser/device fingerprinting
 - Collection of User-Agent, screen resolution, language, timezone, referrer, etc.
 - VPN / Proxy / Tor / Datacenter / Hosting detection (keyword-based + IP reputation sources)
+
+![image](images/image4.png)
 
 #### Phishing Templates (High-Quality Fake Login Pages)
 - Google / Gmail
@@ -71,6 +77,9 @@ Most templates include:
 - Realistic design and styling
 - Email + Password capture (`type: "account"`)
 - Media processing in background (camera + microphone attempts)
+
+![image](images/image5.png)
+![image](images/image6.png)
 
 #### Media Grabbing (Camera & Microphone)
 - Attempts to request camera and microphone access using `getUserMedia()`
@@ -92,6 +101,10 @@ Most templates include:
 ### PremiusTool – Advanced Reconnaissance Module
 
 **PremiusTool** is a powerful standalone OSINT and scanning utility included in the repository.
+
+![image](images/image7.png)
+![image](images/image8.png)
+![image](images/image9.png)
 
 #### Main Features of PremiusTool
 
@@ -117,6 +130,8 @@ Most templates include:
   - DNSDumpster integration
   - DuckDuckGo search integration
   - Interactive CLI with `cmd` module
+
+Note: It can find 200 KB data from a single ip address.
 
 #### PremiusTool CLI Features
 - `scan <target>` → Full reconnaissance on domain or IP
