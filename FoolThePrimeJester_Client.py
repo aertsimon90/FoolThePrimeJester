@@ -19,7 +19,7 @@ elif os.path.exists("/storage/emulated/0/"):
 else:
 	exec("""import pyga"""+"""me.mixer;pygame.mixer.init()""", locals, locals)
 
-my_host = "https://wwwrrn.pythonanywhere.com"
+my_host = "http://localhost:5000"
 loggers = {}
 background_workers = 0
 bot = requests.Session()
