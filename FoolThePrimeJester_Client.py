@@ -886,7 +886,7 @@ def menu():
 ██║        ██║   ██║    ╚█████╔╝
 ╚═╝        ╚═╝   ╚═╝     ╚════╝ 
                                 \033[0m""")
-	print("\033[91mFool\033[93mThePrimeJester\033[0m \033[96mPython Client\033[0m\n\n\033[94m[\033[93m 1 \033[94m]\033[96m Open my Loggers\n\\033[94m[\033[93m 2 \033[94m]\033[96m FTPJ PremiusTool\n\033[94m[\033[93m 3 \033[94m]\033[96m URL Shorteners\n\033[94m[\033[93m 4 \033[94m]\033[96m Client Options\n\033[94m[\033[93m 5 \033[94m]\033[96m Secret Notepad\n\033[94m[\033[93m 6 \033[94m]\033[96m Free FTPJ Hacking Lessons\n\n\033[94m[\033[93m 0 \033[94m]\033[96m EXIT\n\033[0m")
+	print("\033[91mFool\033[93mThePrimeJester\033[0m \033[96mPython Client\033[0m\n\n\033[94m[\033[93m 1 \033[94m]\033[96m Open my Loggers\n\033[94m[\033[93m 2 \033[94m]\033[96m FTPJ PremiusTool\n\033[94m[\033[93m 3 \033[94m]\033[96m URL Shorteners\n\033[94m[\033[93m 4 \033[94m]\033[96m Client Options\n\033[94m[\033[93m 5 \033[94m]\033[96m Secret Notepad\n\033[94m[\033[93m 6 \033[94m]\033[96m Free FTPJ Hacking Lessons\n\n\033[94m[\033[93m 0 \033[94m]\033[96m EXIT\n\033[0m")
 	i = input(">> ").strip()
 	if i == "1":
 		myloggersmenu()
