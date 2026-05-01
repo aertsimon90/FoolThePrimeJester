@@ -11,14 +11,6 @@ try:
 except:
 	Translator = None
 
-if os.name == "nt":
-	exec("""import pyga"""+"""me.mixer;pygame.mixer.init()""", locals, locals)
-elif os.path.exists("/storage/emulated/0/"):
-	os.system("pkg install sox -y")
-	pygame = "termux"
-else:
-	exec("""import pyga"""+"""me.mixer;pygame.mixer.init()""", locals, locals)
-
 my_host = "http://localhost:5000"
 loggers = {}
 background_workers = 0
