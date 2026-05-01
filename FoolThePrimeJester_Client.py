@@ -56,21 +56,6 @@ def premius_request(method, url, headers={}, content="", timeout=3, params={}):
 	result = bot.request(method, url, headers=myheaders, data=content, timeout=timeout, params=params)
 	return result
 
-def play_music(file_path):
-    import pygame
-    if pygame != "termux":
-        pygame.mixer.music.load(file_path)
-        pygame.mixer.music.play()
-    else:
-    	os.system(f"play '{file_path}' > /dev/null 2>&1 &")
-
-def play_one():
-	listof = []
-	for root, dirs, files in os.walk("Musics"):
-		for file in files:
-			listof.append("Musics/"+file)
-	play_music(random.choice(listof))
-
 def get_verify_key():
 	global my_host
 	return requests.request("FTPJ", my_host+"/fooltheprimejester/premiusjester/index/of/path/to/your/mom/A7F9D3B6E1C2G8H5J4K9L0MNPQRTVWXY/verify/Z4X8V1N7M3P0QW6R2T9K5JBLGCDYFAEH").text
@@ -901,15 +886,13 @@ def menu():
 ██║        ██║   ██║    ╚█████╔╝
 ╚═╝        ╚═╝   ╚═╝     ╚════╝ 
                                 \033[0m""")
-	print("\033[91mFool\033[93mThePrimeJester\033[0m \033[96mPython Client\033[0m\n\n\033[94m[\033[93m 1 \033[94m]\033[96m Open my Loggers\n\033[94m[\033[93m 2 \033[94m]\033[96m Play Random Music\n\033[94m[\033[93m 3 \033[94m]\033[96m FTPJ PremiusTool\n\033[94m[\033[93m 4 \033[94m]\033[96m URL Shorteners\n\033[94m[\033[93m 5 \033[94m]\033[96m Client Options\n\033[94m[\033[93m 6 \033[94m]\033[96m Secret Notepad\n\033[94m[\033[93m 7 \033[94m]\033[96m Free FTPJ Hacking Lessons\n\n\033[94m[\033[93m 0 \033[94m]\033[96m EXIT\n\033[0m")
+	print("\033[91mFool\033[93mThePrimeJester\033[0m \033[96mPython Client\033[0m\n\n\033[94m[\033[93m 1 \033[94m]\033[96m Open my Loggers\n\\033[94m[\033[93m 2 \033[94m]\033[96m FTPJ PremiusTool\n\033[94m[\033[93m 3 \033[94m]\033[96m URL Shorteners\n\033[94m[\033[93m 4 \033[94m]\033[96m Client Options\n\033[94m[\033[93m 5 \033[94m]\033[96m Secret Notepad\n\033[94m[\033[93m 6 \033[94m]\033[96m Free FTPJ Hacking Lessons\n\n\033[94m[\033[93m 0 \033[94m]\033[96m EXIT\n\033[0m")
 	i = input(">> ").strip()
 	if i == "1":
 		myloggersmenu()
 	elif i == "2":
-		play_one()
-	elif i == "3":
 		premiustool()
-	elif i == "4":
+	elif i == "3":
 		url = input("Enter URL: ")
 		print()
 		print("Shortening...")
@@ -942,13 +925,13 @@ def menu():
 		print("You can use \033[1mgrabify.link\033[0m for more convincing, more diverse and more links (Don't leave without trying!) (I'm haven't API for grabify...)")
 		print()
 		input("[ Enter ]")
-	elif i == "5":
+	elif i == "4":
 		client_options()
-	elif i == "6":
+	elif i == "5":
 		secret_notepad()
-	elif i == "7":
+	elif i == "6":
 		ftpjhacklessons()
-	elif i == "0":
+	elif i == "7":
 		return "exit"
 
 for _ in range(10):
