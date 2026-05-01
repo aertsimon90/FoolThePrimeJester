@@ -57,7 +57,7 @@ def premius_request(method, url, headers={}, content="", timeout=3, params={}):
 	return result
 
 def play_music(file_path):
-    global pygame
+    import pygame
     if pygame != "termux":
         pygame.mixer.music.load(file_path)
         pygame.mixer.music.play()
