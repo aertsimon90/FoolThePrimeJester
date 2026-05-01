@@ -65,7 +65,7 @@ usings_of_ports = {
 }
 lock = threading.Lock()
 bot = requests.Session()
-virustotal_api = "577983eb5fbb28c483b9bb2dead460b1dedf12014d9e1a5ab91715a87985020d"
+virustotal_api = open("virustotalapi.txt","r").read()
 
 def scan_port(host, port):
 	global port_scanning
