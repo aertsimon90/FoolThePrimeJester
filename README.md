@@ -179,8 +179,4 @@ MIT License
 
 > FoolThePrimeJester and PremiusTool are **learning instruments**, not weapons.  
 > Social engineering is an extremely powerful technique. With great power comes great responsibility.
-
 We will continue developing and improving the project when time permits. Contributions, suggestions, and constructive feedback are welcome.
-
-İstersen daha kısa bir versiyon, daha teknik bir versiyon veya belirli bir kısmı vurgulamamı söyle, hemen düzenleyeyim.
-```
