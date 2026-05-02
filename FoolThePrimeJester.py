@@ -12594,6 +12594,6 @@ def dclogoasset():
 	return send_file("/images/dclogo.jpg", mimetype="image/jpg")
 @app.route("/assets/dcqr.png")
 def dcqrasset():
-	return send_file("/images/dcscan.png", mimetype="image/jpg")
+	return send_file("/images/dcscan.png", mimetype="image/png")
 if __name__ == "__main__":
     app.run(debug=True)
