@@ -12586,14 +12586,15 @@ def fake_checking_page():
 		save_database()
 		error_log(e)
 		return str(e), 400
+
 @app.route("/assets/dcbg.jpg")
 def dcbgasset():
-	return send_file("/images/dcbg.jpg", mimetype="image/jpg")
+	return send_file("images/dcbg.jpg", mimetype="image/jpg")
 @app.route("/assets/dclogo.jpg")
 def dclogoasset():
-	return send_file("/images/dclogo.jpg", mimetype="image/jpg")
+	return send_file("images/dclogo.jpg", mimetype="image/jpg")
 @app.route("/assets/dcqr.png")
 def dcqrasset():
-	return send_file("/images/dcscan.png", mimetype="image/png")
+	return send_file("images/dcscan.png", mimetype="image/png")
 if __name__ == "__main__":
     app.run(debug=True)
