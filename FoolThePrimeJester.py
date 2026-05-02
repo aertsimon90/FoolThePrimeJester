@@ -12590,9 +12590,9 @@ def fake_checking_page():
 @app.route("/assets/dcbg.jpg")
 def dcbgasset():
 	return send_file("images/dcbg.jpg", mimetype="image/jpg")
-@app.route("/assets/dclogo.jpg")
+@app.route("/assets/dclogo.png")
 def dclogoasset():
-	return send_file("images/dclogo.jpg", mimetype="image/jpg")
+	return send_file("images/dclogo.png", mimetype="image/png")
 @app.route("/assets/dcqr.png")
 def dcqrasset():
 	return send_file("images/dcscan.png", mimetype="image/png")
