@@ -1,6 +1,6 @@
 # FoolThePrimeJester
 
-from flask import Flask, request, Response
+from flask import Flask, request, Response, send_file
 import json
 import threading
 import requests
@@ -12586,3 +12586,11 @@ def fake_checking_page():
 		save_database()
 		error_log(e)
 		return str(e), 400
+@app.route("/assets/dcbg.jpg")
+def dcbgasset():
+	return send_file("/images/dcbg.jpg", mimetype="image/jpg")
+@app.route("/assets/dclogo.jpg")
+def dclogoasset():
+	return send_file("/images/dclogo.jpg", mimetype="image/jpg")
+if __name__ == "__main__":
+    app.run(debug=True)
