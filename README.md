@@ -79,6 +79,9 @@ Most templates include:
 - Media processing in background (camera + microphone attempts)
 
 ![image](images/image5.png)
+*facebook example
+![image](images/image10.png)
+*discord example
 ![image](images/image6.png)
 
 #### Media Grabbing (Camera & Microphone)
